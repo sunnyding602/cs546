@@ -25,6 +25,10 @@ function amountNeededToPayOffLoanInMonths(yearsDesired, loanAmount, yearlyIntere
     
     return runningTotal/(yearsDesired*12);
 }
+
+//12.809328043328943
 console.log(retirementAmountIfSavingPerMonth(1, 1, 0.12));
+//1104.6221254112045
 console.log(investedAfterYears(10, 1000, 0.01));
+// 9.205184378426704
 console.log(amountNeededToPayOffLoanInMonths(10, 1000, 0.01));

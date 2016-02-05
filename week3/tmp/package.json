@@ -1,0 +1,17 @@
+{
+  "name": "lecture-3-example",
+  "version": "1.0.0",
+  "description": "hlelloo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Sunny",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
