@@ -37,7 +37,7 @@ ff.monthsToPayOffLoan = function (monthlyPaymentAmount, initialLoanAmount, yearl
 }
 
 
-
+var exports = module.exports = {};
 module.exports = ff;
 
 // You can now add export properties to the exports object to be accessible from outside this file

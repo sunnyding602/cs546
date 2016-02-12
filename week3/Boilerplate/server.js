@@ -1,7 +1,7 @@
 // We first require our express package
 var express = require('express');
 var bodyParser = require('body-parser');
-var myData = require('./data.js')
+var myData = require('./data.js');
 
 function succ(msg){
     return {status: "success", "result": msg  };
