@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Definitive API</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Hello, world!</h1>
+            </div>
+        </div>
+        <main>
+            <!-- Your main content will go here! -->
+            <section>
+                <h2>Ding, Runxi</h2>
+                <p>Helloo from the other side? I am a big age bamboo flutist in the field of Computer Science.</p>
+                <ul>
+                    <li>Computer Science</li>
+                    <li>Fish</li>
+                    <li>I would like to be a front-end master</li>
+                    <li>Javascript(obviously)</li>
+                    <li>Dog</li>
+                </ul>
+
+                <h2> I am creating a financial calculator </h2>
+                <p>This is a financial calculator, it can help you calculate how much mony you will get if you save for instance, 2000 dollars per month.</p>
+            </section>
+            <section>
+                <h2>perMonthRetirementSavings</h2>
+                <table>
+                    <tr>
+                        <th>parameter name</th>
+                        <th>descriptions</th>
+                        <th>example value</th>
+                    </tr>
+                    <tr>
+                        <td>amountSavingPerMonth</td>
+                        <td></td>
+                        <td>1000</td>
+                    </tr>
+
+                    <tr>
+                        <td>yearlyInterestRateOfInvestment</td>
+                        <td></td>
+                        <td>0.3</td>
+                    </tr>
+
+                    <tr>
+                        <td>yearsUntilRetirement</td>
+                        <td></td>
+                        <td>10</td>
+                    </tr>
+                </table>
+
+                <form action="/results/perMonthRetirementSavings" method="POST">
+                <label>
+                    amountSavingPerMonth:
+                    <input type="text" name="years" id="amountSavingPerMonth" />
+                </label>
+
+                <label>
+                    yearlyInterestRateOfInvestment:
+                    <input type="text" name="perMonth" id="yearlyInterestRateOfInvestment" />
+                </label>
+                <label>
+                    yearsUntilRetirement:
+                    <input type="text" name="interestRate" id="yearsUntilRetirement" />
+                </label>
+                    <input type="submit" name="submit" />
+
+                </form>
+            </section>
+
+            <section>
+                <h2>investedAmount</h2>
+                <table>
+                    <tr>
+                        <th>name</th>
+                        <th>descriptions</th>
+                        <th>example value</th>
+                    </tr>
+                    <tr>
+                        <td>yearsInvesting</td>
+                        <td></td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>initialAmount</td>
+                        <td></td>
+                        <td>5000</td>
+                    </tr>
+
+                    <tr>
+                        <td>yearlyInterestRateOfInvestment</td>
+                        <td></td>
+                        <td>0.1</td>
+                    </tr>
+                </table>
+                <form action="/results/investedAmount" method="POST">
+                <label>
+                    yearsInvesting:
+                    <input type="text" name="years" />
+                </label>
+
+                <label>
+                    initialAmount:
+                    <input type="text" name="initial"  />
+                </label>
+                <label>
+                    yearlyInterestRateOfInvestment:
+                    <input type="text" name="interestRate"  />
+                </label>
+                    <input type="submit" name="submit" />
+                </form>
+            </section>
+
+            <section>
+                <h2>loanPayoff</h2>
+                <table>
+                    <tr>
+                        <th>parameter name</th>
+                        <th>descriptions</th>
+                        <th>example value</th>
+                    </tr>
+                    <tr>
+                        <td>monthlyPaymentAmount</td>
+                        <td></td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>initialLoanAmount</td>
+                        <td></td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>yearlyInterestRateOfLoan</td>
+                        <td></td>
+                        <td>0.3</td>
+                    </tr>
+                </table>
+
+                <form action="/results/loanPayoff" method="POST">
+                <label>
+                    monthlyPaymentAmount:
+                    <input type="text" name="monthlyAmount" />
+                </label>
+
+                <label>
+                    initialLoanAmount:
+                    <input type="text" name="loanAmount"  />
+                </label>
+                <label>
+                    yearlyInterestRateOfLoan:
+                    <input type="text" name="interestRate"  />
+                </label>
+                    <input type="submit" name="submit" />
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- jQuery fallback -->
+    <script>
+        if (!window.jQuery) { document.write('<script src="/assets/js/jquery.js"><\/script>'); }
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
