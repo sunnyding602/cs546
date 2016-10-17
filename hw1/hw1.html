@@ -1,0 +1,1117 @@
+
+<!DOCTYPE html>
+<html class="scripts-not-loaded" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab 1</title>
+  <!--[if lte IE 9]> <meta http-equiv=refresh content="0; URL=/ie-9-is-not-supported.html" /> <![endif]-->
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" rel="apple-touch-icon" />
+  
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-cf77388199.css" media="all" rel="stylesheet" />
+  
+  <meta content="app-id=480883488" name="apple-itunes-app" />
+<meta content="app-id=com.instructure.candroid" name="google-play-app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0096db">
+  <link href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-9eb0dd5a6f.css" media="all" rel="stylesheet" />
+<link href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-b2fb167720.css" media="all" rel="stylesheet" />
+<link href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-19e58f9a45.css" media="all" rel="stylesheet" />
+  
+  
+  <script>
+    // listen for any clicks on links that have href="#" and queue them to be fired on dom ready.
+      function _earlyClick(e){
+        var cur = e.target || e.srcElement;
+        while ( cur && cur.ownerDocument ) {
+          if ( cur.getAttribute('href') == '#' ) {
+            e.preventDefault();
+            _earlyClick.clicks = _earlyClick.clicks || [];
+            _earlyClick.clicks.push(cur);
+            break;
+          }
+          cur = cur.parentNode;
+        }
+      }
+      document.addEventListener('click', _earlyClick);
+  </script>
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments context-course_14567">
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+
+      <header id="header" class="ic-app-header no-print ">
+    <div class="ic-app-header__layout">
+      <div class="ic-app-header__primary">
+      <a href="#content" id="skip_navigation_link">Skip To Content</a>
+        <div role="region" class="ic-app-header__main-navigation" aria-label="Main Navigation">
+          <div class="ic-app-header__logomark-container">
+            <a href="https://sit.instructure.com/" class="ic-app-header__logomark">
+              <span class="screenreader-only">Dashboard</span>
+            </a>
+          </div>
+          <ul id="menu" class="ic-app-header__menu-list">
+              <li class="menu-item ic-app-header__menu-list-item ">
+                <a id="global_nav_profile_link" href="/profile" class="ic-app-header__menu-list-link">
+                  <div class="menu-item-icon-container" aria-hidden="true">
+                    <div class="ic-avatar ">
+                      <img src="https://sit.instructure.com/images/thumbnails/966074/TQ5OFOAAjG44G3XTTug88So3FACpsEY5JvQr22WU" alt="Runxi Ding" />
+                    </div>
+                  </div>
+                  <div class="menu-item__text">
+                    Account
+                  </div>
+                </a>
+              </li>
+            <li class="ic-app-header__menu-list-item ">
+              <a id="global_nav_dashboard_link" href="https://sit.instructure.com/" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M231.6 94.2c-2.5-4.9-8.5-6.9-13.4-4.5l-57.3 28.6c-5.4-5.2-12.7-8.4-20.8-8.4 -16.6 0-30 13.5-30 30 0 16.6 13.5 30 30 30 16.6 0 30-13.5 30-30 0-1.3-0.1-2.5-0.2-3.8l57.3-28.6C232 105.2 234 99.2 231.6 94.2zM140 150c-5.5 0-10-4.5-10-10s4.5-10 10-10c5.5 0 10 4.5 10 10S145.6 150 140 150zM70 150H50c-5.5 0-10-4.5-10-10s4.5-10 10-10h20c5.5 0 10 4.5 10 10S75.5 150 70 150zM140 80c-5.5 0-10-4.5-10-10V50c0-5.5 4.5-10 10-10 5.5 0 10 4.5 10 10v20C150 75.5 145.5 80 140 80zM105 89.6c-3.5 0-6.8-1.8-8.7-5l-10-17.3c-2.8-4.8-1.1-10.9 3.7-13.7 4.8-2.8 10.9-1.1 13.7 3.7l10 17.3c2.8 4.8 1.1 10.9-3.7 13.7C108.4 89.1 106.7 89.6 105 89.6zM79.4 115.4c-1.7 0-3.4-0.4-5-1.3l-17.3-10c-4.8-2.8-6.4-8.9-3.7-13.7 2.8-4.8 8.9-6.4 13.7-3.7l17.3 10c4.8 2.8 6.4 8.9 3.7 13.7C86.2 113.6 82.8 115.4 79.4 115.4zM173.6 89.6c-1.7 0-3.4-0.4-5-1.3 -4.8-2.8-6.4-8.9-3.7-13.7l10-17.3c2.8-4.8 8.9-6.4 13.7-3.7 4.8 2.8 6.4 8.9 3.7 13.7l-10 17.3C180.4 87.8 177.1 89.6 173.6 89.6zM140 0C62.8 0 0 63 0 140.5V190c0 5.5 4.5 10 10 10h260c5.5 0 10-4.5 10-10v-49.5C280 63 217.2 0 140 0zM260 180H20v-39.5C20 74.1 73.8 20 140 20c66.2 0 120 54.1 120 120.5V180zM230 150h-20c-5.5 0-10-4.5-10-10s4.5-10 10-10h20c5.5 0 10 4.5 10 10S235.5 150 230 150z"/></svg>
+                </div>
+                <div class="menu-item__text">Dashboard</div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+              <a id="global_nav_courses_link" href="/courses" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M226.2 259H32.3c-5.9 0-10.8-4.8-10.8-10.8v-43.5H10.8C4.8 204.8 0 199.9 0 194c0-6 4.8-10.8 10.8-10.8h10.8v-21.6H10.8c-5.9 0-10.8-4.8-10.8-10.8s4.8-10.8 10.8-10.8h10.8v-21.6H10.8c-5.9 0-10.8-4.8-10.8-10.8 0-6 4.8-10.8 10.8-10.8h10.8V75.4H10.8C4.8 75.4 0 70.6 0 64.7s4.8-10.8 10.8-10.8h10.8V10.8c0-6 4.8-10.8 10.8-10.8h193.9c5.9 0 10.8 4.8 10.8 10.8v21.6h32.3c5.9 0 10.8 4.8 10.8 10.8v172.4c0 6-4.8 10.8-10.8 10.8H237v21.9C237 254.2 232.2 259 226.2 259zM43.1 237.4h172.4V21.6H43.1v32.3h10.7c5.9 0 10.8 4.8 10.8 10.8s-4.8 10.8-10.8 10.8H43.1V97h10.7c5.9 0 10.8 4.8 10.8 10.8 0 6-4.8 10.8-10.8 10.8H43.1v21.6h10.7c5.9 0 10.8 4.8 10.8 10.8s-4.8 10.8-10.8 10.8H43.1v21.6h10.7c5.9 0 10.8 4.8 10.8 10.8 0 6-4.8 10.8-10.8 10.8H43.1V237.4zM237 204.8h21.5v-21.6H237V204.8zM237 161.7h21.5v-21.6H237V161.7zM237 118.5h21.5V97H237V118.5zM237 75.4h21.5V53.9H237V75.4zM172.2 129.3H96.9c-5.9 0-10.8-4.8-10.8-10.8V64.7c0-6 4.8-10.8 10.8-10.8h75.3c5.9 0 10.8 4.8 10.8 10.8v53.9C183 124.5 178.2 129.3 172.2 129.3zM107.7 107.8h53.8V75.4h-53.8V107.8z"/></svg>
+                </div>
+                <div class="menu-item__text">
+                  Courses
+                </div>
+              </a>
+            </li>
+              <li class="menu-item ic-app-header__menu-list-item ">
+                <a id="global_nav_groups_link" href="/groups" class="ic-app-header__menu-list-link">
+                  <div class="menu-item-icon-container" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--groups" viewBox="0 0 200 135"><path d="M134.5 129.4c0-1.1 0-19.8-6.2-31.1-4.5-8.5-16.4-12.4-35-19.2-1.7-.6-3.4-1.1-5.1-1.7v-8.5c5.6-5.1 8.5-12.4 8.5-20.3V29.4C96.6 13 83.6 0 67.2 0S37.9 13 37.9 29.4v19.2c0 7.3 3.4 14.7 8.5 20.3v8.5c-1.7.6-3.4 1.1-5.1 1.7-18.6 6.2-30.5 10.7-35 19.2C0 109.6 0 128.8 0 129.4c0 3.4 2.3 5.6 5.6 5.6h123.7c3.5 0 5.7-2.3 5.2-5.6zm-123.2-5.7c.6-5.6 1.7-14.7 3.4-19.8C17 98.8 30 94.3 43.5 89.8c2.8-1.1 5.6-2.3 9-3.4 2.3-.6 4-2.8 4-5.1V66.7c0-1.7-.6-3.4-1.7-4.5-4-3.4-6.2-8.5-6.2-13.6V29.4c0-10.2 7.9-18.1 18.1-18.1s18.1 7.9 18.1 18.1v19.2c0 5.1-2.3 10.2-6.2 13.6-1.1 1.1-1.7 2.8-1.7 4.5v14.7c0 2.3 1.7 4.5 4 5.1 2.8 1.1 6.2 2.3 9 3.4 13.6 5.1 26.6 9.6 28.8 14.1 2.8 5.1 4 13.6 4.5 19.8H11.3zM196 79.1c-2.8-6.2-11.3-9.6-22.6-13.6l-1.7-.6v-3.4c4.5-4 6.8-9.6 6.8-15.8V35c0-12.4-9.6-22-22-22s-22 10.2-22 22v10.7c0 6.2 2.3 11.9 6.8 15.8V65l-1.7.6c-7.3 2.8-13 4.5-16.9 7.3-1.7 1.1-2.3 2.8-2.3 5.1.6 1.7 1.7 3.4 3.4 4.5 7.9 4 12.4 7.3 14.1 10.7 2.3 4.5 4 10.2 5.1 18.1.6 2.3 2.8 4.5 5.6 4.5h45.8c3.4 0 5.6-2.8 5.6-5.1 0-3.9 0-24.3-4-31.6zm-42.9 25.4c-1.1-6.8-2.8-12.4-5.1-16.9-1.7-4-5.1-6.8-9.6-10.2 1.7-1.1 3.4-1.7 5.1-2.3l5.6-2.3c1.7-.6 3.4-2.8 3.4-5.1v-9.6c0-1.7-.6-3.4-2.3-4.5-2.8-1.7-4.5-5.1-4.5-8.5V34.5c0-6.2 4.5-10.7 10.7-10.7s10.7 5.1 10.7 10.7v10.7c0 3.4-1.7 6.2-4.5 8.5-1.1 1.1-2.3 2.8-2.3 4.5v10.2c0 2.3 1.1 4.5 3.4 5.1l5.6 2.3c6.8 2.3 15.3 5.6 16.4 7.9 1.7 2.8 2.8 12.4 2.8 20.9h-35.4z"/></svg>
+
+                  </div>
+                  <div class="menu-item__text">
+                    Groups
+                  </div>
+                </a>
+              </li>
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M268.3 280H11.7C5.2 280 0 274.8 0 268.3V35c0-6.4 5.2-11.7 11.7-11.7h35V11.7C46.7 5.2 51.9 0 58.3 0h35C99.8 0 105 5.2 105 11.7v11.7h70V11.7C175 5.2 180.2 0 186.7 0h35c6.4 0 11.7 5.2 11.7 11.7v11.7h35c6.4 0 11.7 5.2 11.7 11.7v233.3C280 274.8 274.8 280 268.3 280zM23.3 256.7h233.3v-210h-23.3v11.7c0 6.4-5.2 11.7-11.7 11.7h-35c-6.4 0-11.7-5.2-11.7-11.7V46.7h-70v11.7c0 6.4-5.2 11.7-11.7 11.7h-35c-6.4 0-11.7-5.2-11.7-11.7V46.7H23.3V256.7zM198.3 46.7H210V23.3h-11.7V46.7zM70 46.7h11.7V23.3H70V46.7zM198.3 245c-6.4 0-11.7-5.2-11.7-11.7v-11.7h-35v11.7c0 6.4-5.2 11.7-11.7 11.7 -6.4 0-11.7-5.2-11.7-11.7v-11.7h-35v11.7c0 6.4-5.2 11.7-11.7 11.7S70 239.8 70 233.3v-11.7H46.7c-6.4 0-11.7-5.2-11.7-11.7s5.2-11.7 11.7-11.7H70V175H46.7c-6.4 0-11.7-5.2-11.7-11.7 0-6.4 5.2-11.7 11.7-11.7H70v-23.3H46.7c-6.4 0-11.7-5.2-11.7-11.7S40.2 105 46.7 105H70V93.3c0-6.4 5.2-11.7 11.7-11.7s11.7 5.2 11.7 11.7V105h35V93.3c0-6.4 5.2-11.7 11.7-11.7 6.4 0 11.7 5.2 11.7 11.7V105h35V93.3c0-6.4 5.2-11.7 11.7-11.7 6.4 0 11.7 5.2 11.7 11.7V105h23.3c6.4 0 11.7 5.2 11.7 11.7s-5.2 11.7-11.7 11.7H210v23.3h23.3c6.4 0 11.7 5.2 11.7 11.7 0 6.4-5.2 11.7-11.7 11.7H210v23.3h23.3c6.4 0 11.7 5.2 11.7 11.7s-5.2 11.7-11.7 11.7H210v11.7C210 239.8 204.8 245 198.3 245zM151.7 198.3h35V175h-35V198.3zM93.3 198.3h35V175h-35V198.3zM151.7 151.7h35v-23.3h-35V151.7zM93.3 151.7h35v-23.3h-35V151.7z"/></svg>
+                </div>
+                <div class="menu-item__text">
+                  Calendar
+                </div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M93.3 105c0-6.4 5.2-11.7 11.7-11.7h70c6.4 0 11.7 5.2 11.7 11.7s-5.2 11.7-11.7 11.7h-70C98.6 116.7 93.3 111.4 93.3 105zM105 70h23.3c6.4 0 11.7-5.2 11.7-11.7s-5.2-11.7-11.7-11.7H105c-6.4 0-11.7 5.2-11.7 11.7S98.6 70 105 70zM280 198.3v70c0 6.4-5.2 11.7-11.7 11.7H11.7C5.2 280 0 274.8 0 268.3v-69.8c0-1.1 0.1-2.2 0.4-3.3 0.3-1.1 0.8-2.1 1.3-3L36.7 134c2.1-3.5 5.9-5.7 10-5.7h11.7V11.7C58.3 5.2 63.6 0 70 0h140c6.4 0 11.7 5.2 11.7 11.7v116.7h11.7c4.1 0 7.9 2.1 10 5.7l35 58.3c0.1 0.2 0.1 0.5 0.3 0.7 0.4 0.7 0.6 1.4 0.8 2.2 0.2 0.8 0.4 1.5 0.5 2.3C279.9 197.8 280 198.1 280 198.3zM32.3 186.7h67.9c6.4 0 11.7 5.2 11.7 11.7V210c0 7.8 3.5 7.8 6 7.8h48.7c5.7 0 10.5-3.6 10.5-7.8v-11.7c0-6.4 5.2-11.7 11.7-11.7h59l-21-35h-5.1v11.7c0 6.4-5.2 11.7-11.7 11.7s-11.7-5.2-11.7-11.7v-140H81.7v140c0 6.4-5.2 11.7-11.7 11.7s-11.7-5.2-11.7-11.7v-11.7h-5.1L32.3 186.7zM256.7 210h-56.3c0 17.2-15.2 31.1-33.8 31.1h-48.7c-17.6 0-29.4-12.5-29.4-31.1H23.3v46.7h233.3V210zM175 163.3c6.4 0 11.7-5.2 11.7-11.7 0-6.4-5.2-11.7-11.7-11.7h-70c-6.4 0-11.7 5.2-11.7 11.7 0 6.4 5.2 11.7 11.7 11.7H175z"/></svg>
+                  <span class="menu-item__badge" style="display: none">0</span>
+                </div>
+                <div class="menu-item__text">
+                  Inbox
+                </div>
+              </a>
+            </li>
+              
+
+            <div role="region" aria-label="Secondary Navigation" class="ic-app-header__secondary-navigation">
+              <ul class="ic-app-header__menu-list">
+                <li class="ic-app-header__menu-list-item">
+                 <a class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/" id="global_nav_help_link">
+                    <div class="menu-item-icon-container" role="presentation">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100 200C44.9 200 0 155.1 0 100 0 44.9 44.9 0 100 0s100 44.9 100 100C200 155.1 155.1 200 100 200zM100 20c-44.1 0-80 35.9-80 80s35.9 80 80 80 80-35.9 80-80S144.1 20 100 20z"/><path d="M110 130H90v-30h10c11 0 20-9 20-20 0-11-9-20-20-20s-20 9-20 20H60c0-22.1 17.9-40 40-40s40 17.9 40 40c0 18.6-12.8 34.3-30 38.7V130z"/><circle cx="100" cy="150" r="12.5"/></svg>
+
+                    </div>
+                    <div class="menu-item__text">
+                      Help
+                    </div>
+</a>                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper-container" class="ic-app-container">
+    <div id="wrapper" class="ic-app-main-layout-vertical">
+        <div class="ic-app-nav-toggle-and-crumbs no-print">
+            <button type="button" aria-hidden="true" id="courseMenuToggle" class="Button Button--link Button--small ic-app-course-nav-toggle" title="Show and hide courses menu"><i class="icon-hamburger"></i></button>
+            <div class="ic-app-crumbs">
+          <nav aria-label="breadcrumbs" id="breadcrumbs" role="navigation"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/14567"><span class="ellipsible">Web Programming</span></a></li><li><a href="/courses/14567/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://sit.instructure.com/courses/14567/assignments/54175"><span class="ellipsible">Lab 1</span></a></li></ul></nav>
+          </div>
+        </div>
+    <div class="ic-app-main-layout-horizontal">
+          <div id="left-side" class="list-view ic-app-course-menu">
+              <span id="section-tabs-header-subtitle" class="ellipsis">2016 Fall</span>
+            <nav aria-label="context" role="navigation"><ul id="section-tabs"><li class="section"><a class="home" href="/courses/14567">Home</a></li><li class="section"><a aria-label="Course Announcements" class="announcements" href="/courses/14567/announcements">Announcements</a></li><li class="section"><a aria-label="Course Assignments" class="assignments active" href="/courses/14567/assignments">Assignments</a></li><li class="section"><a aria-label="Course Discussions" class="discussions" href="/courses/14567/discussion_topics">Discussions</a></li><li class="section"><a aria-label="Course Grades" class="grades" href="/courses/14567/grades">Grades</a></li><li class="section"><a class="people" href="/courses/14567/users">People</a></li><li class="section"><a class="pages" href="/courses/14567/wiki">Pages</a></li><li class="section"><a aria-label="Course Files" class="files" href="/courses/14567/files">Files</a></li><li class="section"><a class="syllabus" href="/courses/14567/assignments/syllabus">Syllabus</a></li><li class="section"><a class="modules" href="/courses/14567/modules">Modules</a></li><li class="section"><a class="conferences" href="/courses/14567/conferences">Conferences</a></li><li class="section"><a class="collaborations" href="/courses/14567/collaborations">Collaborations</a></li><li class="section"><a class="context_external_tool_10" href="/courses/14567/external_tools/10">Blackboard Collaborate</a></li><li class="section"><a class="context_external_tool_62" href="/courses/14567/external_tools/62">NJVid Video Browser</a></li><li class="section"><a class="context_external_tool_85" href="/courses/14567/external_tools/85">Chat</a></li></ul></nav>
+        </div>
+        <div id="main" class="ic-app-main-and-right-side">
+          <div id="not_right_side" class="ic-app-main-content">
+            <div id="content-wrapper" class="ic-app-main-content__primary">
+                
+                
+              <div id="content" role="main" >
+                
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class='assignment-title'>
+      <div class='title-content'>
+        <h1 class="title">
+          Lab 1
+        </h1>
+      </div>
+      <div class='assignment-buttons'>
+        <span style="display: inline-block">
+          
+        </span>
+        <a class="btn btn-primary submit_assignment_link " href="#">Submit Assignment</a>
+      </div>
+    </div>
+    <ul class='student-assignment-overview'>
+      <li>
+        <span class='title'>Due</span>
+        <span class='value'>
+          <span class="date_text">
+                <span class="display_date">Sep 16</span> by 
+                <span class="display_time"> 5pm</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class='title'>Points</span>
+        <span class='value'>100</span>
+      </li>
+        <li>
+          <span class='title'>Submitting</span>
+          <span class='value'>a file upload</span>
+        </li>
+      
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version"><h1 id="toc_0" style="padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 28px; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff; margin: 0px !important 0px 10px 0px;">CS-546 Lab 1</h1>
+<h2 id="toc_1" style="margin: 0px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">An Intro to Node</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For this lab, you will be creating several functions and run them in a simple script!</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">You will submit a single file named <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">lab1.js</code>. In this lab, you will write the 5 functions below, and run them with test input.</p>
+<h2 id="toc_2" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">sumOfSquares(num1, num2, num3)</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For your first function, you will calculate the sum of the squares of 3 numbers and return that result. That means <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">sumOfSquares(5, 3, 10)</code> would return <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">134</code>.</p>
+<h2 id="toc_3" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">sayHelloTo(firstName, lastName, title);</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For the second function, you will make a simple function that uses <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">console.log</code> to print hello to someone!</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">The interesting thing about this function is that you don't have to have <em style=";">all</em> the inputs to run.</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">Your function should print a string in the following format:</p>
+<div style="color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<pre style="margin: 15px 0px; background-color: #f8f8f8; border: 1px solid #cccccc; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px;"><code class="language-none" style="margin: 0px; padding: 0px; white-space: pre; border: none; background-color: transparent; background-position: initial initial; background-repeat: initial initial;">sayHelloTo(); // throws 
+sayHelloTo("Phil"); // logs: Hello, Phil! 
+sayHelloTo("Phil", "Barresi"); //logs: Hello, Phil Barresi. I hope you are having a good day!
+sayHelloTo("Phil", "Barresi", "Mr."); // logs: Hello, Mr. Phil Barresi! Have a good evening!</code></pre>
+</div>
+<h2 id="toc_4" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">cupsOfCoffee(howManyCups)</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For the third function, you will create and return a simple song called <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">99 Cups of Coffee on the Desk</code>.</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">The lyrics of this song grow longer depending on how many cups of coffee there are on the desk.</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">If you run <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">cupsOfCoffee(5)</code> it would return:</p>
+<div style="color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<pre style="margin: 15px 0px; background-color: #f8f8f8; border: 1px solid #cccccc; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px;"><code class="language-none" style="margin: 0px; padding: 0px; white-space: pre; border: none; background-color: transparent; background-position: initial initial; background-repeat: initial initial;">5 cups of coffee on the desk! 5 cups of coffee! 
+Pick one up, drink the cup, 4 cups of coffee on the desk!
+
+4 cups of coffee on the desk! 4 cups of coffee! 
+Pick one up, drink the cup, 3 cups of coffee on the desk!
+
+3 cups of coffee on the desk! 3 cups of coffee! 
+Pick one up, drink the cup, 2 cups of coffee on the desk!
+
+2 cups of coffee on the desk! 2 cups of coffee! 
+Pick one up, drink the cup, 1 cup of coffee on the desk!
+
+1 cup of coffee on the desk! 1 cup of coffee! 
+Pick it up, drink the cup, no more coffee left on the desk!</code></pre>
+</div>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">Take note for the subtle grammar changes!</p>
+<h2 id="toc_5" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">occurrencesOfSubstring(fullString, substring)</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For the fourth function, you will calculate how many times a substring occurs in a given string.</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For example, calling <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">countOccurrencesOfSubstring("hello world", "o");</code>should return <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">2</code>, because the letter <em style=";">o</em> appears two times in the string.</p>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">However, you must also factor in a case where there are overlaps! When you call <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">countOccurrencesOfSubstring("Helllllllo, class!", "ll");</code>should return <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">6</code>.</p>
+<h2 id="toc_6" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">randomizeSentences(paragraph)</h2>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">For your final function, you will take in a paragraph and randomize the sentences in it.</p>
+<div style="color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<pre style="margin: 15px 0px; background-color: #f8f8f8; border: 1px solid #cccccc; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px;"><code class="language-none" style="margin: 0px; padding: 0px; white-space: pre; border: none; background-color: transparent; background-position: initial initial; background-repeat: initial initial;">var paragraph = "Hello, world! I am a paragraph. You can tell that I am a paragraph because there are multiple sentences that are split up by punctuation marks. Grammar can be funny, so I will only put in paragraphs with periods, exclamation marks, and question marks -- no quotations.";
+
+console.log(randomizeSentences(paragraph));</code></pre>
+</div>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">Would print something <em style=";">like</em>:</p>
+<div style="color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<pre style="margin: 15px 0px; background-color: #f8f8f8; border: 1px solid #cccccc; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px;"><code class="language-none" style="margin: 0px; padding: 0px; white-space: pre; border: none; background-color: transparent; background-position: initial initial; background-repeat: initial initial;">You can tell that I am a paragraph because there are multiple sentences that are split up by punctuation marks. I am a paragraph. Grammar can be funny, so I will only put in paragraphs with periods, exclamation marks, and question marks -- no quotations.  Hello, world!</code></pre>
+</div>
+<p style="margin: 15px 0px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">This one is tricky! You'll have to work with string manipulation, and probably an array or two as well.</p>
+<h2 id="toc_7" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">Error Checking</h2>
+<ol style="margin: 15px 0px; padding-left: 30px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<li style="margin: 0px;">Expect and account for bad input, and handle it accordingly! You can <code style="margin: 0px 2px; padding: 0px 5px; white-space: nowrap; border: 1px solid #eaeaea; background-color: #f8f8f8;">throw "A string describing an error"</code> when given bad input. You can read about throwing <a style="color: #4183c4;" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw">on the MDN</a>
+<ol style="margin: 15px 0px; padding-left: 30px;">
+<li style="margin: 0px;">You should throw if data is not of an expected type: ie, expecting a number and receiving an integer.</li>
+<li style="margin: 0px;">You should throw if your data is an out of bounds situation; ie: receiving a negative side length for certain values, or data that does not make sense given the requirements of the function.</li>
+</ol>
+</li>
+</ol>
+<h2 id="toc_8" style="margin: 20px 0px 10px; padding: 0px; font-weight: bold; cursor: text; position: relative; font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; color: #000000; font-family: Helvetica, arial, sans-serif; font-style: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff;">Requirements</h2>
+<ol style="padding-left: 30px; color: #000000; font-family: Helvetica, arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; text-align: start; text-indent: 0px; white-space: normal; background-color: #ffffff; margin: 15px 0px 0px !important 0px;">
+<li style="margin: 0px;">You will have to write each function</li>
+<li style="margin: 0px;">You must check that all arguments are valid and of the proper type</li>
+</ol></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1474059600</span>
+    <span class="due_date_string">09/16/2016</span>
+    <span class="due_time_string">05:00pm</span>
+  </div>
+</div>
+
+
+  <div style="display: none;" id="submit_assignment" data-context_code="course_14567" data-asset_string="assignment_54175">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="#submit_google_doc_form" class="submit_online_url_option">Google Doc</a></li>
+    </ul>
+    <form accept-charset="UTF-8" action="/courses/14567/assignments/54175/submissions" class="submit_assignment_form" enctype="multipart/form-data" id="submit_online_upload_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="YJt3MpP1L4h3dsJdElXGjyBdSS1agNnNH1en373zaBUl1Q9R2IFV4SEiqQlcbbPbazwgWQnu4YlvM+Syy6cffw==" /></div>
+    <input id="submission_submission_type" name="submission[submission_type]" type="hidden" value="online_upload" />
+    <input id="submission_attachment_ids" name="submission[attachment_ids]" type="hidden" value="" />
+    <table class="formtable" style="width: 100%;">
+      <tr>
+        <td colspan="2">
+          Upload a file, or choose a file you&#39;ve already uploaded.
+            
+        </td>
+      </tr><tr>
+        <td><label for="attachment_uploaded_data" id="attachmentLabel">File:</label></td>
+        <td>
+          <a href="#" class="add add_another_file_link"> Add Another File </a>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none;">
+            <input aria-labelledby="attachmentLabel" type="file" name="attachments[-1][uploaded_data]" class="input-file"/>
+            <a href="#" class="remove_attachment_link no-hover" style="display: none;"><img alt="remove empty attachment" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/delete_circle-f4242c3ba6.png" /></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+        <a href="#" class="toggle_uploaded_files_link">Click here to find a file you&#39;ve already uploaded</a><br/>
+        <div id="uploaded_files" style="display: none;">
+          
+          <ul>
+    <li class="folder  folder folder_167606">
+      <span class="id" style="display: none;">167606</span>
+      <span class="text name">my files</span>
+        <ul>
+    <li class="folder  folder folder_177061">
+      <span class="id" style="display: none;">177061</span>
+      <span class="text name">unfiled</span>
+        <ul>
+    <li class="file  file file_990322">
+      <span class="id" style="display: none;">990322</span>
+      <span class="text name">Numeric_Formatting_Lab_Runxi_Ding.cpp</span>
+    </li>
+    <li class="file  file file_1001468">
+      <span class="id" style="display: none;">1001468</span>
+      <span class="text name">credentials.csv</span>
+    </li>
+    <li class="file  file file_1001469">
+      <span class="id" style="display: none;">1001469</span>
+      <span class="text name">password.csv</span>
+    </li>
+    <li class="file  zip file_1003698">
+      <span class="id" style="display: none;">1003698</span>
+      <span class="text name">rding6.zip</span>
+    </li>
+    <li class="file  zip file_1019059">
+      <span class="id" style="display: none;">1019059</span>
+      <span class="text name">rding6_assignment2.zip</span>
+    </li>
+    <li class="file  text file_1020439">
+      <span class="id" style="display: none;">1020439</span>
+      <span class="text name">RunxiDing_Rockspace_VS_AWS.txt</span>
+    </li>
+    <li class="file  pdf file_1022201">
+      <span class="id" style="display: none;">1022201</span>
+      <span class="text name">RunxiDing_sunnyflute.com.pdf</span>
+    </li>
+    <li class="file  zip file_1048729">
+      <span class="id" style="display: none;">1048729</span>
+      <span class="text name">rding6_assignment2-1.zip</span>
+    </li>
+    <li class="file  ppt file_1070776">
+      <span class="id" style="display: none;">1070776</span>
+      <span class="text name">Group2_Evolution_Of_Online_Pyament_Method.pptx</span>
+    </li>
+    <li class="file  text file_1125357">
+      <span class="id" style="display: none;">1125357</span>
+      <span class="text name">desc_market_channel_traffic_sources.txt</span>
+    </li>
+    <li class="file  zip file_1126088">
+      <span class="id" style="display: none;">1126088</span>
+      <span class="text name">runxi_desc_ga_screenshot.zip</span>
+    </li>
+    <li class="file  file file_1134241">
+      <span class="id" style="display: none;">1134241</span>
+      <span class="text name">treelab_group20.cpp</span>
+    </li>
+    <li class="file  zip file_1134242">
+      <span class="id" style="display: none;">1134242</span>
+      <span class="text name">treelab_group20.cpp.zip</span>
+    </li>
+    <li class="file  zip file_1135867">
+      <span class="id" style="display: none;">1135867</span>
+      <span class="text name">group20_treelab.zip</span>
+    </li>
+    <li class="file  text file_1137020">
+      <span class="id" style="display: none;">1137020</span>
+      <span class="text name">seo_keywords.txt</span>
+    </li>
+    <li class="file  zip file_1140708">
+      <span class="id" style="display: none;">1140708</span>
+      <span class="text name">runxiflute_homepage_abtest.zip</span>
+    </li>
+    <li class="file  zip file_1147036">
+      <span class="id" style="display: none;">1147036</span>
+      <span class="text name">seo_keywords.zip</span>
+    </li>
+    <li class="file  zip file_1161144">
+      <span class="id" style="display: none;">1161144</span>
+      <span class="text name">group20_huffman_code.zip</span>
+    </li>
+    <li class="file  zip file_1170872">
+      <span class="id" style="display: none;">1170872</span>
+      <span class="text name">final_project.zip</span>
+    </li>
+    <li class="file  zip file_1187935">
+      <span class="id" style="display: none;">1187935</span>
+      <span class="text name">group20_trie.zip</span>
+    </li>
+    <li class="file  file file_1221187">
+      <span class="id" style="display: none;">1221187</span>
+      <span class="text name">RunxiDing570FinalDrawGraph.cpp</span>
+    </li>
+    <li class="file  file file_1301338">
+      <span class="id" style="display: none;">1301338</span>
+      <span class="text name">Eratosthenes.java</span>
+    </li>
+    <li class="file  file file_1301358">
+      <span class="id" style="display: none;">1301358</span>
+      <span class="text name">Eratosthenes-1.java</span>
+    </li>
+    <li class="file  file file_1310280">
+      <span class="id" style="display: none;">1310280</span>
+      <span class="text name">Miller_Rabin.java</span>
+    </li>
+    <li class="file  file file_1314301">
+      <span class="id" style="display: none;">1314301</span>
+      <span class="text name">quickSort_RunxiDing.cpp</span>
+    </li>
+    <li class="file  doc file_1328956">
+      <span class="id" style="display: none;">1328956</span>
+      <span class="text name">HW2  Runxi Ding.docx</span>
+    </li>
+    <li class="file  file file_1328986">
+      <span class="id" style="display: none;">1328986</span>
+      <span class="text name">heapsort.cpp</span>
+    </li>
+    <li class="file  doc file_1329000">
+      <span class="id" style="display: none;">1329000</span>
+      <span class="text name">HW2  Runxi Ding-1.docx</span>
+    </li>
+    <li class="file  file file_1332388">
+      <span class="id" style="display: none;">1332388</span>
+      <span class="text name">InertionSort.java</span>
+    </li>
+    <li class="file  zip file_1335623">
+      <span class="id" style="display: none;">1335623</span>
+      <span class="text name">HW1_RunxiDing.zip</span>
+    </li>
+    <li class="file  zip file_1335694">
+      <span class="id" style="display: none;">1335694</span>
+      <span class="text name">HW1_RunxiDing-1.zip</span>
+    </li>
+    <li class="file  file file_1336610">
+      <span class="id" style="display: none;">1336610</span>
+      <span class="text name">BinarySearch.java</span>
+    </li>
+    <li class="file  doc file_1359155">
+      <span class="id" style="display: none;">1359155</span>
+      <span class="text name">HW3_CS521_RunxiDing.docx</span>
+    </li>
+    <li class="file  file file_1372142">
+      <span class="id" style="display: none;">1372142</span>
+      <span class="text name">MyArrayList.java</span>
+    </li>
+    <li class="file  zip file_1373036">
+      <span class="id" style="display: none;">1373036</span>
+      <span class="text name">assignment4_RunxiDing.zip</span>
+    </li>
+    <li class="file  file file_1405733">
+      <span class="id" style="display: none;">1405733</span>
+      <span class="text name">MyLinkedList.java</span>
+    </li>
+    <li class="file  doc file_1408036">
+      <span class="id" style="display: none;">1408036</span>
+      <span class="text name">hw5.docx</span>
+    </li>
+    <li class="file  file file_1415316">
+      <span class="id" style="display: none;">1415316</span>
+      <span class="text name">MyHashMap.java</span>
+    </li>
+    <li class="file  file file_1415318">
+      <span class="id" style="display: none;">1415318</span>
+      <span class="text name">Trie.java</span>
+    </li>
+    <li class="file  file file_1435492">
+      <span class="id" style="display: none;">1435492</span>
+      <span class="text name">BoggleSolution.java</span>
+    </li>
+    <li class="file  doc file_1441176">
+      <span class="id" style="display: none;">1441176</span>
+      <span class="text name">hw6.docx</span>
+    </li>
+    <li class="file  doc file_1448467">
+      <span class="id" style="display: none;">1448467</span>
+      <span class="text name">hw7.docx</span>
+    </li>
+    <li class="file  doc file_1464941">
+      <span class="id" style="display: none;">1464941</span>
+      <span class="text name">HW8.docx</span>
+    </li>
+    <li class="file  file file_1474020">
+      <span class="id" style="display: none;">1474020</span>
+      <span class="text name">ExpressionTree.java</span>
+    </li>
+    <li class="file  doc file_1485010">
+      <span class="id" style="display: none;">1485010</span>
+      <span class="text name">assignment9.docx</span>
+    </li>
+    <li class="file  doc file_1499888">
+      <span class="id" style="display: none;">1499888</span>
+      <span class="text name">HW10.docx</span>
+    </li>
+    <li class="file  pdf file_1651118">
+      <span class="id" style="display: none;">1651118</span>
+      <span class="text name">593projectdoc.pdf</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_173776">
+      <span class="id" style="display: none;">173776</span>
+      <span class="text name">conversation attachments</span>
+        <ul>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_167607">
+      <span class="id" style="display: none;">167607</span>
+      <span class="text name">profile pictures</span>
+        <ul>
+    <li class="file  image file_966074">
+      <span class="id" style="display: none;">966074</span>
+      <span class="text name">profile.jpg</span>
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="submission_comment_textarea" id="submission_comment" name="submission[comment]" placeholder="Comments..." title="Additional comments">
+</textarea>
+        </td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" class='button-container'>
+          <button type="button" class='cancel_button btn'>Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+        </td>
+      </tr><tr style="display: none;">
+        <td colspan="2" style="text-align: center;">
+          Submitting... <img src=""/>
+        </td>
+      </tr>
+    </table>
+</form>
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+          <form accept-charset="UTF-8" action="/courses/14567/assignments/54175/submissions" class="submit_assignment_form" id="submit_google_doc_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tCoDmadLVyRsSN+qr9kmiHfeJXyCn2j8xdb3jBg+CqPxZHv67D8tTToctP7h4VPcPL9MCNHxULi1srThbmp9yQ==" /></div>
+            <input id="submission_submission_type" name="submission[submission_type]" type="hidden" value="google_doc" />
+            <input class="google_doc_id" id="google_doc_document_id" name="google_doc[document_id]" type="hidden" value="" />
+            <table class="formtable" style="width: 100%;">
+              <tr>
+                <td style="padding-bottom: 10px;" colspan="2">
+                  Select the file from the list below.
+                  
+                  </td>
+              </tr><tr>
+                <td colspan="2">
+                  <div id="google_docs_container" style="height: 200px; overflow: auto;">
+                    <div style="text-align: center; margin: 10px;">
+                      <img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/ajax-loader-bar-71e6988298.gif" />
+                    </div>
+                  </div>
+                </td>
+              </tr><tr>
+                <td colspan="2" style="text-align: center;">
+                  <div style="text-align: left;">
+                    <textarea class="submission_comment_textarea" id="submission_comment" name="submission[comment]" placeholder="Comments..." title="Additional comments">
+</textarea>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan="2" class='button-container'>
+                  <button type="button" class='cancel_button btn'>Cancel</button>
+                  <button type="submit" class="btn btn-primary">Submit Assignment</button>
+                </td>
+              </tr>
+            </table>
+            <div id="uploading_google_doc_message" style="display: none;">
+              Retrieving a copy of your Google Doc to submit for this assignment.  This may take a little while, depending on the size of the file...
+              <div style="text-align: center; margin: 10px;">
+                <img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/ajax-loader-bar-71e6988298.gif" />
+              </div>
+            </div>
+</form>
+
+
+  </div>
+</div>
+
+
+
+
+<div id="rubrics" style="margin-bottom: 10px;">
+  <div style="display: none;" id="rubric_parameters">
+    <input type="hidden" name="rubric_association[association_type]" value="Assignment"/>
+    <input type="hidden" name="rubric_association[association_id]" value="54175"/>
+    <input type="hidden" name="rubric_association[purpose]" value="grading"/>
+  </div>
+  <div id="rubric_long_description_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+  </div>
+  <div class="editing">
+    <textarea class="long_description" aria-label="Long Description" name="long_description" style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Description</button>
+    </div>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+
+</div>
+<div
+  class="rubric_container rubric  "
+  id="default_rubric"
+  style="display: none;"
+  tabindex="0"
+>
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="float: right; display: none;" class="links displaying">
+      <a
+        href="/courses/14567/rubrics/%7B%7B%20id%20%7D%7D"
+        class=" edit_rubric_link no-print no-hover"
+        style=""
+        title="Edit Rubric"
+        aria-label="Edit Rubric"
+        role="button"
+      ><i class="icon-edit standalone-icon"></i></a>
+      <a
+        href="https://sit.instructure.com/search/rubrics?q="
+        class="find_rubric_link no-print no-hover"
+        style=""
+        title="Find Another Rubric"
+        aria-label="Find Another Rubric"
+        role="button"
+      ><i class="icon-search standalone-icon"></i></a>
+        <a
+          href="/courses/14567/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D"
+          class="delete_rubric_link no-print no-hover"
+          style=""
+          title="Delete Rubric"
+          aria-label="Delete Rubric"
+          role="button"
+        ><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+        <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="/courses/14567/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="/courses/14567/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="/courses/14567/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can&#39;t change a rubric once you&#39;ve started using it.</span>
+        <a href="/courses/14567/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://sit.instructure.com/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:"/>
+      <a href="https://sit.instructure.com/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/find-6164443e2a.png" /> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You&#39;ve already rated students with this rubric.  Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col">Pts</th>
+    <th scope="col" class="editing">&nbsp;</th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container">
+    <div class="container">
+      <img alt="This criterion is linked to a Learning Outcome" class="learning_outcome_flag" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/flagged_question-e2565888dd.png" />
+      <span class="description criterion_description_value">Description of criterion</span>
+      <span class="learning_outcome_id" style="display: none;"></span>
+      <span class="criterion_id" style="display: none;"></span>
+      <div class="long_description_holder editing empty">
+        <a href="#" class="long_description_link">view longer description</a>
+        <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+      </div>
+      <div class="threshold">
+        threshold:
+        <span class="mastery_points">5</span> pts
+      </div>
+        <div class="links editing">
+          <a href="#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        </div>
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tr>
+          <td id="rating_blank" class="rating edge_rating">
+          <div class="container">
+            <div class="description rating_description_value">Full Marks</div>
+            <span class="nobr"><span class="points">5</span> pts</span>
+            <span class="rating_id" style="display: none;">blank</span>
+              <div class="links">
+                <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                <a href="#" class="delete_rating_link"><i class="icon-end standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                <!-- Hidden if last -->
+                <a href="#" class="add_rating_link_after"><i class="icon-add standalone-icon"></i><span class="screenreader-only">Add new rating category after current rating</span></a>
+              </div>
+          </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating">
+          <div class="container">
+            <div class="description rating_description_value">No Marks</div>
+            <span class="nobr"><span class="points">0</span> pts</span>
+            <span class="rating_id" style="display: none;">blank_2</span>
+              <div class="links">
+                <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                <a href="#" class="delete_rating_link"><i class="icon-end standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                <!-- Hidden if last -->
+                <a href="#" class="add_rating_link_after"><i class="icon-add standalone-icon"></i><span class="screenreader-only">Add new rating category after current rating</span></a>
+              </div>
+          </div>
+          </td>
+      </tr></table>
+      <div style="display: none; font-style: italic; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave
+        comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom" /> pts
+      </span><br />
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br />
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/rubric_comment-ddae8546ab.png" />
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+  <td class="editing">
+    <a
+      href="#"
+      class="delete_criterion_link"
+      title="Delete Criterion Row"
+      role="button"
+      aria-label="Delete Criterion Row"
+    ><i class="icon-end"></i></a>
+  </td>
+</tr>
+
+  <tr class="summary" style="">
+    <td colspan="4">
+      <div style="float: right;" class="total_points_holder">
+        <span style="padding-right: 10px;">Total Points:
+            <span class="rubric_total">5</span> <span class="assessing">out of 5</span>
+        </span>
+      </div>
+      <div style="float: left;" class="editing">
+      <a href="#" aria-label='Add Criterion' class="icon-plus add_criterion_link">Criterion</a>
+      &nbsp;&nbsp;<a href="#" class="icon-search find_outcome_link outcome">Find Outcome</a>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating" />
+          <label for="rubric_custom_rating">I&#39;ll write free-form comments when assessing students</label>
+        </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" />
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox" />
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+
+  <div id="sequence_footer" data-course-id="14567" data-asset-id="54175" data-asset-type="Assignment"></div>
+
+
+              </div>
+            </div>
+            <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+              <aside id="right-side" role="complementary">
+                <div id="sidebar_content">
+
+
+</div>
+
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">5579c95f-5648-41a0-8ce4-d01e3efd6a5c</div>
+    </div>
+    <div id="cant_record_dialog" style="display: none;">
+  <div>
+    In order to create video or audio recordings your computer needs to be 
+    webcam-enabled.  If you don&#39;t have a webcam on your computer, you can still
+    record audio-only messages by first installing the Google Video Chat
+    plugin.
+  </div>
+  <div style="text-align: center; font-size: 1.5em; margin: 10px;">
+    <a href="http://www.google.com/chat/video" target="_blank" class="btn">Install the Video Plugin</a>
+  </div>
+  <div class="links" style="text-align: right; font-size: 0.8em; display: none;">
+    <a href="#" class="cant_record_link">Don&#39;t have a webcam?</a>
+  </div>
+</div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"fms-prod.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"googleAnalyticsAccount":"UA-9138420-1","disableScribdPreviews":true,"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"NJVID","id":62,"url":"https:\/\/stevens.njvid.net\/blti\/content-editor.php","icon_url":"https:\/\/stevens.njvid.net\/images\/njvid.png","canvas_icon_class":null,"width":800,"height":600},{"name":"YouTube","id":5290,"url":"https:\/\/www.edu-apps.org\/lti_public_resources\/?tool_id=youtube","icon_url":"https:\/\/www.edu-apps.org\/assets\/lti_public_resources\/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600}]};
+  ENV = {"ASSET_HOST":"https:\/\/du11hjcvx0uqb.cloudfront.net","active_brand_config":null,"active_brand_config_json_url":"https:\/\/du11hjcvx0uqb.cloudfront.net\/dist\/brandable_css\/default\/variables-5b1601f3579f4b5a5d49dbef7e69f6eb.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":"https:\/\/du11hjcvx0uqb.cloudfront.net\/dist\/brandable_css\/new_styles_normal_contrast\/bundles\/what_gets_loaded_inside_the_tinymce_editor-d5326ca2eb.css","current_user_id":"20372","current_user":{"id":"20372","display_name":"Runxi Ding","avatar_image_url":"https:\/\/sit.instructure.com\/images\/thumbnails\/966074\/TQ5OFOAAjG44G3XTTug88So3FACpsEY5JvQr22WU","html_url":"https:\/\/sit.instructure.com\/about\/20372"},"current_user_roles":["user","student","observer"],"current_user_disabled_inbox":false,"files_domain":"cluster31-files.instructure.com","DOMAIN_ROOT_ACCOUNT_ID":10300000000000001,"use_new_styles":true,"k12":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"SETTINGS":{"open_registration":true,"eportfolios_enabled":true,"show_feedback_link":true},"page_view_update_url":"\/page_views\/5579c95f-5648-41a0-8ce4-d01e3efd6a5c?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU3OWM5NWYtNTY0OC00MWEwLThjZTQtZDAxZTNlZmQ2YTVjIiwidSI6MTAzMDAwMDAwMDAwMjAzNzIsImMiOiIyMDE2LTA5LTA5VDE2OjE1OjU0Ljc0WiJ9.LyNTvepjpdI5Zz5tb9S91pA7okbsfeStcNmN_BiHams","context_asset_string":"course_14567","ping_url":"https:\/\/sit.instructure.com\/api\/v1\/courses\/14567\/ping","TIMEZONE":"America\/New_York","CONTEXT_TIMEZONE":"America\/New_York","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","RICH_CONTENT_SERVICE_ENABLED":false,"ROOT_OUTCOME_GROUP":{"id":"23770","title":"CS  -546-A","vendor_guid":null,"url":"\/api\/v1\/courses\/14567\/outcome_groups\/23770","subgroups_url":"\/api\/v1\/courses\/14567\/outcome_groups\/23770\/subgroups","outcomes_url":"\/api\/v1\/courses\/14567\/outcome_groups\/23770\/outcomes","can_edit":false,"import_url":"\/api\/v1\/courses\/14567\/outcome_groups\/23770\/import","context_id":"14567","context_type":"Course","description":null},"COURSE_ID":14567,"ASSIGNMENT_ID":54175,"EXTERNAL_TOOLS":[],"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":[],"ID":54175},"badge_counts":{"submissions":0},"notices":[]};
+
+    // TODO: move this out when we have a single require call
+    require = {
+      translate: true,
+      baseUrl: '/optimized',
+      paths: {
+    "common":"compiled\/bundles\/common",
+    "jqueryui":"vendor\/jqueryui",
+    "compiled\/tinymce":"compiled\/tinymce.js?v2",
+    "demo_site":"plugins\/demo_site",
+    "migration_tool":"plugins\/migration_tool",
+    "catalog_provisioner":"plugins\/catalog_provisioner",
+    "instructure_misc_plugin":"plugins\/instructure_misc_plugin",
+    "analytics":"plugins\/analytics",
+    "multiple_root_accounts":"plugins\/multiple_root_accounts",
+    "canvasnet_registration":"plugins\/canvasnet_registration",
+    "compiled\/bundles\/modules\/content_migration_setup_without_extensions":"compiled\/bundles\/modules\/content_migration_setup",
+    "compiled\/bundles\/modules\/content_migration_setup":"compiled\/bundles\/modules\/content_migration_setup_with_extensions",
+    "compiled\/registration\/main_without_extensions":"compiled\/registration\/main",
+    "compiled\/registration\/main":"compiled\/registration\/main_with_extensions",
+    "compiled\/registration\/signupDialog_without_extensions":"compiled\/registration\/signupDialog",
+    "compiled\/registration\/signupDialog":"compiled\/registration\/signupDialog_with_extensions",
+    "compiled\/bundles\/modules\/account_quota_settings_without_extensions":"compiled\/bundles\/modules\/account_quota_settings",
+    "compiled\/bundles\/modules\/account_quota_settings":"compiled\/bundles\/modules\/account_quota_settings_with_extensions",
+    "canvas_quizzes":"client_apps\/canvas_quizzes",
+    "app\/config\/environments\/production":"empty:"},
+      packages : [{"name":"ic-ajax","location":"bower\/ic-ajax\/dist\/amd"},{"name":"ic-styled","location":"bower\/ic-styled"},{"name":"ic-menu","location":"bower\/ic-menu"},{"name":"ic-tabs","location":"bower\/ic-tabs\/dist\/amd"},{"name":"ic-droppable","location":"bower\/ic-droppable\/dist\/amd"},{"name":"ic-sortable","location":"bower\/ic-sortable\/dist\/amd"},{"name":"ic-modal","location":"bower\/ic-modal\/dist\/amd"},{"name":"ic-lazy-list","location":"bower\/ic-lazy-list"},{"name":"ember-qunit","location":"bower\/ember-qunit\/dist\/amd"}],
+      shim: {
+    'bower/react/react-dom': {
+      exports: 'ReactDOM'
+    },
+    'bower/react-router/build/umd/ReactRouter': {
+      deps: ['react'],
+      exports: 'ReactRouter'
+    },
+    'bower/react-tray/dist/react-tray': {
+      deps: ['react']
+    },
+    'bower/react-modal/dist/react-modal': {
+      deps: ['react']
+    },
+    'bower/react-tokeninput/dist/react-tokeninput': {
+      deps: ['react'],
+    },
+    'bower/react-select-box/dist/react-select-box': {
+      deps: ['react'],
+    },
+    'bower/ember/ember': {
+      deps: ['jquery', 'handlebars'],
+      exports: 'Ember'
+    },
+    'bower/ember-data/ember-data': {
+      deps: ['ember'],
+      exports: 'DS'
+    },
+    'bower/handlebars/handlebars.runtime': {
+      exports: 'Handlebars'
+    },
+    'bower/reflux/dist/reflux.js': {
+      deps: ['react'],
+      exports: 'Reflux'
+    },
+    'vendor/FileAPI/FileAPI.min': {
+      deps: ['jquery', 'vendor/FileAPI/config'],
+      exports: 'FileAPI'
+    },
+    'fixed-data-table': {
+      deps: ['object_assign', 'react'],
+      exports: 'fixed-data-table'
+    },
+    'vendor/bootstrap-select/bootstrap-select' : {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/jquery.jcrop': {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/jquery.smartbanner': {
+      deps: ['jquery'],
+      exports: '$'
+    },
+    'vendor/md5': {
+      exports: 'CryptoJS'
+    },
+    'handlebars': {
+      deps: ['bower/handlebars/handlebars.runtime.amd'],
+      exports: 'Handlebars'
+    },
+    'vendor/i18n': {
+      exports: 'I18n'
+    },
+    'vendor/react-infinite-scroll.min' : {
+      deps: ['react'],
+      exports: 'InfiniteScroll'
+    },
+    'bower/tinymce/tinymce' : {
+      exports: 'tinymce'
+    },
+    'bower/axios/dist/axios' : {
+      exports: 'axios'
+    },
+    'bower/tinymce/themes/modern/theme' : {
+      deps: ['bower/tinymce/tinymce'],
+      exports: 'tinymce'
+    }
+  }
+,
+      map: {"canvas_quizzes":{"lodash":"underscore","d3":"vendor\/d3.v3","backbone":"vendor\/backbone","jquery\/instructure_date_and_time":"jquery.instructure_date_and_time"},"*":{"React":"react"}},
+      waitSeconds: 60
+    };
+</script>
+
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/vendor/require-749d0c60e9.js"></script>
+
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/common-2323b22081.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/assignment_show-c712f1927b.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/submit_assignment-8cfad69e72.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/edit_rubric-2ed97143ed.js"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/optimized/compiled/bundles/navigation_header-0e396ed23c.js"></script>
+
+
+
+
+  <script>
+  // Determines if the scripts are loaded.
+  // When we get everything out of the views, and have a single top-level
+  // `require`, this becomes meaningless and will be abandoned.
+  (function() {
+    var attempts = 0;
+    var timeout = 10;
+    var check = function() {
+      attempts++;
+      var done = !window.requirejs.s.contexts._.defQueue.length
+      var giveup = attempts === 100; // 1 second
+      if (done || giveup) {
+        var className = document.documentElement.className;
+        document.documentElement.className = className.replace(/scripts-not-loaded/, '');
+        return;
+      }
+      setTimeout(check, timeout);
+    };
+
+    check();
+  }).call(this);
+  </script>
+
+
+</div> <!-- #application -->
+</body>
+</html>
+
