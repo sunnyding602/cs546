@@ -82,7 +82,7 @@ let exportedMethods = {
                 updatedRecipeData.ingredients = updatedRecipe.ingredients;
             }
 
-            if (updatedRecipe.body) {
+            if (updatedRecipe.steps) {
                 updatedRecipeData.steps = updatedRecipe.steps;
             }
 
