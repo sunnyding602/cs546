@@ -1,0 +1,6 @@
+<h1>{{location.name}} @{{location.location}}</h1>
+<h3>Events going on:</h3>
+
+{{#each events}}
+	<a href="/events/{{id}}"><li>{{title}}</li></a>
+{{/each}}

@@ -1,0 +1,6 @@
+<h1>{{person.name}} will attend the following events:(click for more details)</h1>
+<ul>
+{{#each events}}
+	<a href="/events/{{id}}"><li>{{title}}</li></a>
+{{/each}}
+</ul>

@@ -1,0 +1,15 @@
+<h1>{{event.title}}<h1>
+<h3>Start Time:</h3>
+<span>{{event.startTime}}</span>
+
+<h3>Description:</h3>
+<span>{{event.description}}</span>
+<h3>Location:</h3>
+<a href="/locations/{{location.id}}"><em>{{location.name}}</em></a>
+
+<h3>Attendees:</h3>
+<ul>
+{{#each attendees}}
+	<a href="/people/{{id}}"><li>{{id}}:{{name}}</li></a>
+{{/each}}
+</ul>
