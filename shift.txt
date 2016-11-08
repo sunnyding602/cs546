@@ -1,0 +1,17 @@
+#Overview
+    1.what is shift project?
+    2.why we build shift?
+
+#System Architecture
+    1.show a graph
+    2.database server(store historial data downloaded from trth)
+    3.matching engine
+    4.information center
+    5.clients(console, qt, web)
+
+#teaching and research purpose
+    1.be able to simulate stock data(show web gui screenshot/video)
+    2.can apply different strategies
+
+
+

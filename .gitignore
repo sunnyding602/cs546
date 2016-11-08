@@ -2,3 +2,4 @@
 CS-546-WS-Summer-1
 node_modules*
 npm-debug.log
+.vscode/

@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form class="server-form" method="post">
+      <div class="form-group">
+        <label for="someText">Some Text</label>
+        <textarea class="form-control" id="someText" name="someText" placeholder="moderate amount of text">{{someText}}</textarea>
+      </div>
+      <div class="form-group">
+        <label for="insertedText">Interesded Text</label>
+        <input type="text" class="form-control" id="insertedText" name="insertedText" placeholder="input some text" value="{{insertedText}}">
+      </div>
+
+      <div class="form-group">
+        <label for="numberOfTimes">number of times</label>
+        <input type="text" class="form-control" id="numberOfTimes" name="numberOfTimes" placeholder="number of times the above string will be inserted" value="{{numberOfTimes}}">
+      </div>
+
+
+      <div class="form-group">
+        <label for="numberOfChar">number of characters</label>
+        <input type="text" class="form-control" id="numberOfChar" name="numberOfChar" placeholder="number of characters between each insert" value="{{numberOfChar}}">
+      </div>
+
+  {{#if error }}
+      <div class="form-group">
+        <div class="alert alert-danger">
+          {{ error }}
+        </div>
+      </div>
+      {{/if}}
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+      {{#if result }}
+      <div class="form-group">
+        <div class="alert alert-success">
+          The result is: {{ result }}
+        </div>
+      </div>
+      {{/if}}
+    </form>
+  </div>
+</div>
