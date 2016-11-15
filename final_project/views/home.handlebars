@@ -35,13 +35,13 @@
           title: 'Click to zoom'
         });
 
-        var vedioString = '<video width="320" height="240" src="/uploads/{{name}}" controls></video>';
+        var vedioString{{@index}} = '<video width="320" height="240" src="/uploads/{{name}}" controls></video>';
 
-        var myWindow = new google.maps.InfoWindow({
-          content: vedioString
+        var myWindow{{@index}} = new google.maps.InfoWindow({
+          content: vedioString{{@index}}
         });
         marker{{@index}}.addListener('click', () => {
-          myWindow.open(map, marker{{@index}});
+          myWindow{{@index}}.open(map, marker{{@index}});
         });
 {{/each}}
 

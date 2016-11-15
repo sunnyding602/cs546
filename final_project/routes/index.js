@@ -10,6 +10,7 @@ const constructorMethod = (app) => {
     app.get("/", (req, res) => {//home page, you can also call it index.html
 
 		videosData.getVideos().then(videos=>{
+			console.log(videos);
 
 			res.render("home", {//get gps crood example
 				partial: "home-scripts",

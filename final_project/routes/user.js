@@ -21,7 +21,7 @@ router.get("/upload", (req, res) => {
 });
 
 router.post("/upload", upload.single('video'),(req, res) => {
-    console.log(req.file);
+    console.log(uploadDir+req.file.originalname);
     fs.renameSync(req.file.path, uploadDir+req.file.originalname);
 	videosData.saveVideo(req.file.originalname, req.body.latitude, req.body.longitude);
     res.send(req.file.originalname + " uploaded");
