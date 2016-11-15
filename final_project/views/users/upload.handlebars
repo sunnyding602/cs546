@@ -1,4 +1,33 @@
       <form action="/users/upload" method="post" enctype="multipart/form-data">
             <input type="file" name="video" accept="video/*" capture>
               <input type="submit" value="Upload">
+				<input type="hidden" name="latitude" id="latitude">
+				<input type="hidden" name="longitude" id="longitude">
       </form>
+
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Get GPS Data</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+	$("#latitude").val(position.coords.latitude);
+	$("#longitude").val(position.coords.longitude);
+}
+</script>
+
