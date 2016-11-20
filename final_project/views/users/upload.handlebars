@@ -1,4 +1,5 @@
       <form action="/users/upload" method="post" enctype="multipart/form-data">
+            click choose file to take a short video and upload it
             <input type="file" name="video" accept="video/*" capture>
               <input type="submit" value="Upload">
 				<input type="hidden" name="latitude" id="latitude">
@@ -6,14 +7,15 @@
       </form>
 
 
-<p>Click the button to get your coordinates.</p>
+<p>Your location info is the following:</p>
 
-<button onclick="getLocation()">Get GPS Data</button>
 
 <p id="demo"></p>
 
 <script>
 var x = document.getElementById("demo");
+
+getLocation();
 
 function getLocation() {
     if (navigator.geolocation) {
