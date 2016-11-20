@@ -6,6 +6,10 @@ const upload = multer({ dest: uploadDir});
 const fs = require('fs');
 const data = require('../data');
 const videosData = data.videos;
+const userData = data.users;
+const jwtauth = data.jwtauth;
+const uuid = require("uuid");
+
 const exec = require('child_process').exec;
 
 
@@ -45,5 +49,50 @@ router.post("/upload", upload.single('video'),(req, res) => {
     //     });
 });
 
+
+router.get("/usersystem", (req, res) => {
+
+    res.render("users/usersystem",{
+            partial: "home-scripts"
+        });
+    
+});
+
+router.post("/signup", (req,res)=> {
+    let name = req.body.uname;
+    let password = req.body.upwd;
+    let _id = uuid.v4();
+    let sessionId = jwtauth.genToken(_id);
+
+    userData.createUser(_id, sessionId, password, name).then((info)=> {
+        res.cookie('sessionId', sessionId, { expires: new Date(Date.now() + 900000), httpOnly: true });
+        console.log("signup success");
+        res.redirect("/");
+    }).catch((err)=> {
+        res.status(401).send({success: false, message:err});
+    });
+});
+
+router.post("/login", (req,res)=> {
+    let name = req.body.uname;
+    let password = req.body.upwd;
+    userData.findOneUser(name,password).then((user) => {
+        let sessionId = jwtauth.genToken(user._id);
+        userData.updateSessionId(user._id,sessionId).then((user)=> {
+            res.cookie('sessionId', sessionId, { expires: new Date(Date.now() + 900000), httpOnly: true });
+            console.log("login success");
+            res.redirect("/");
+        });
+    }).catch((err)=> {
+        res.status(401).send({success: false, message:err});
+    });
+    
+});
+
+router.get("/logout", (req,res)=> {
+    console.log("clear");
+    res.clearCookie('sessionId');
+    res.redirect("/");
+});
 
 module.exports = router;
