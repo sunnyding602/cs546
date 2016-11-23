@@ -1,5 +1,5 @@
 const fileData = require('./fileData');
-const FILE_NAME =  'notes_data';
+const FILE_NAME =  'notes.json';
 const uuid = require('node-uuid');
 let exportedMethods = {
 	saveNote(note){

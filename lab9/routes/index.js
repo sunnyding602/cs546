@@ -4,8 +4,11 @@ const noteData = require('../data/noteData');
 const constructorMethod = (app) => {
 
     app.get("/", (req, res) => {
-        res.render("examples/home", {
-            partial: "home-scripts"
+        noteData.getNotes().then((data)=> {
+            console.log(data);
+           res.render("examples/home", {
+                    partial: "home-scripts", notes:data
+            });
         });
     })
 
