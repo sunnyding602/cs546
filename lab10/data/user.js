@@ -14,6 +14,22 @@ let users = [
         lastName: 'Ding',
         profession: 'student',
         Bio: 'currently a grad student at Stevens'
+    },
+    {
+        username: 'lemon',
+        password: 'damnyoujackdonaghy',
+        firstName: 'Elizabeth',
+        lastName: 'Lemon',
+        profession: 'Writer',
+        Bio: 'Elizabeth Miervaldis "Liz" Lemon is the main character of the American television series 30 Rock. She created and writes for the fictional comedy-sketch show The Girlie Show or TGS with Tracy Jordan.'
+    },    
+    {
+        username: 'theboywholived',
+        password: 'quidditch',
+        firstName: 'Harry',
+        lastName: 'Potter',
+        profession: 'Student',
+        Bio: `Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the life of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry . The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles.`
     }
 ];
 
