@@ -68,6 +68,7 @@ let exportedMethods = {
     },
 
 	attachUserToReq(req, res, next){
+		if(!req.cookies.sessionId) return next();
 		return exportedMethods.findBySessionId(req.cookies.sessionId).then( user=>{
 			if(user){
 				req.user = user;
