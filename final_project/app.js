@@ -8,6 +8,7 @@ const app = express();
 const static = express.static(__dirname + '/public');
 const static_uploads = express.static(__dirname + '/uploads');
 const configRoutes = require("./routes");
+const cookieParser = require('cookie-parser')
 
 const exphbs = require('express-handlebars');
 
@@ -48,6 +49,7 @@ app.use("/uploads", static_uploads);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(rewriteUnsupportedBrowserMethods);
+app.use(cookieParser());
 
 app.engine('handlebars', handlebarsInstance.engine);
 app.set('view engine', 'handlebars');

@@ -57,10 +57,35 @@ let exportedMethods = {
                 return this.getUser(userId);
             })
         });
-
-        
     },
-    // updateUserInfo(id,updateinfo) {
+
+    findBySessionId(sessionId){
+        return userCollection().then(users=>{
+            return users.findOne({sessionId: sessionId}).then(user=>{
+				return user;
+            });
+        });
+    },
+
+	attachUserToReq(req, res, next){
+		return exportedMethods.findBySessionId(req.cookies.sessionId).then( user=>{
+			if(user){
+				req.user = user;
+			}
+			return next();	
+		}).catch(err=>{
+			console.log(err);
+			return next();
+		});
+	},
+	ensureLogin(req, res, next){
+		if(req.user){
+			return next();
+		}else{
+			res.redirect("/");
+		}
+	},
+	// updateUserInfo(id,updateinfo) {
     //     let userId = id;
     //     let updateprofile = {info:updateinfo};
        
