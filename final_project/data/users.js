@@ -1,4 +1,5 @@
-const userCollection = require("./userCollection");
+const mongoCollections = require("../config/mongoCollections");
+const userCollection = mongoCollections.users;
 const bcrypt = require("bcrypt");
 let exportedMethods = {
     getAllUsers() {
