@@ -19,11 +19,8 @@ router.get("/", (req, res) => {
 
 
 router.get("/upload", (req, res) => {
-    videosData.deleteVideosByLocationId("my_location_id").then((videos) => {
-        console.log(videos);
-    });
 	res.render("users/upload", {
-		partial: "home-scripts"
+		partial: "upload-scripts"
 	});
 });
 
@@ -33,9 +30,9 @@ router.post("/upload", upload.single('video'),(req, res) => {
     }
     console.log(uploadDir+req.file.originalname);
     console.log(req.file.path);
-    fs.renameSync(req.file.path, uploadDir+req.file.originalname);
+    //fs.renameSync(req.file.path, uploadDir+req.file.originalname);
     //req.user._id
-	videosData.saveVideo(req.file.path, req.file.originalname, "my_user_id", "my_location_id").then((videoId) => {
+	videosData.saveVideo(req.file.path, req.file.originalname, /*req.user._id*/"my_user_id", "my_location_id").then((videoId) => {
         exec(`echo "someone just uploaded a new video name:${req.file.originalname} lat ${req.body.latitude} lng${req.body.longitude}" | mail -s "new video uploaded" sunnyding602@gmail.com`, 
         (error, stdout, stderr) => {
             if (error) {

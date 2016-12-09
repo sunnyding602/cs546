@@ -1,14 +1,12 @@
-      <form action="/users/upload" method="post" enctype="multipart/form-data">
+<form id="file" action="/users/upload" method="post" enctype="multipart/form-data">
             click choose file to take a short video and upload it
-            <input type="file" name="video" accept="video/*" capture>
-              <input type="submit" value="Upload">
-				<input type="hidden" name="latitude" id="latitude">
-				<input type="hidden" name="longitude" id="longitude">
-      </form>
-
+    <input id="file-input" type="file" name="video" accept="video/*" capture>
+    <input type="submit" value="Upload">
+	<input type="hidden" name="latitude" id="latitude">
+	<input type="hidden" name="longitude" id="longitude">
+</form>
 
 <p>Your location info is the following:</p>
-
 
 <p id="demo"></p>
 
@@ -31,5 +29,5 @@ function showPosition(position) {
 	$("#latitude").val(position.coords.latitude);
 	$("#longitude").val(position.coords.longitude);
 }
-</script>
 
+</script>

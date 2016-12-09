@@ -1,3 +1,4 @@
+const fs = require('fs');
 const fileData = require('./fileData');
 const mongoCollections = require("../config/mongoCollections");
 const videoCollection = mongoCollections.videos;
@@ -40,9 +41,19 @@ let exportedMethods = {
     deleteVideosByLocationId(locationId) {
         return new Promise((fulfill, reject) => {
             videoCollection().then((collection) => {
-                collection.remove({locationId: locationId}).then(() => {
-                    fulfill(locationId);
+                collection.find({locationId: locationId}).toArray().then((videos) => {
+                    if(videos) {
+                        videos.forEach((video) => {
+                            fs.unlinkSync(video.filepath);
+                        });
+                        collection.remove({locationId: locationId}).then((info) => {
+                            fulfill(locationId);
+                        });
+                    } else {
+                        fulfill("no videos with the location id");
+                    }
                 });
+                
             });
         });
     }
