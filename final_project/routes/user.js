@@ -12,7 +12,6 @@ const uuid = require("uuid");
 
 const exec = require('child_process').exec;
 
-
 router.get("/", (req, res) => {
     res.render("users/home", {
             partial: "home-scripts" });
@@ -20,9 +19,12 @@ router.get("/", (req, res) => {
 
 
 router.get("/upload", (req, res) => {
-		res.render("users/upload", {
-			partial: "home-scripts"
-		});
+    videosData.deleteVideosByLocationId("my_location_id").then((videos) => {
+        console.log(videos);
+    });
+	res.render("users/upload", {
+		partial: "home-scripts"
+	});
 });
 
 router.post("/upload", upload.single('video'),(req, res) => {
@@ -30,10 +32,11 @@ router.post("/upload", upload.single('video'),(req, res) => {
         res.send('If no gps data provided, we cannot put a pin on the map');
     }
     console.log(uploadDir+req.file.originalname);
+    console.log(req.file.path);
     fs.renameSync(req.file.path, uploadDir+req.file.originalname);
-	videosData.saveVideo(req.file.originalname, req.body.latitude, req.body.longitude);
-
-    exec(`echo "someone just uploaded a new video name:${req.file.originalname} lat ${req.body.latitude} lng${req.body.longitude}" | mail -s "new video uploaded" sunnyding602@gmail.com`, 
+    //req.user._id
+	videosData.saveVideo(req.file.path, req.file.originalname, "my_user_id", "my_location_id").then((videoId) => {
+        exec(`echo "someone just uploaded a new video name:${req.file.originalname} lat ${req.body.latitude} lng${req.body.longitude}" | mail -s "new video uploaded" sunnyding602@gmail.com`, 
         (error, stdout, stderr) => {
             if (error) {
                 console.error(`exec error: ${error}`);
@@ -42,20 +45,20 @@ router.post("/upload", upload.single('video'),(req, res) => {
             console.log(`stdout: ${stdout}`);
             console.log(`stderr: ${stderr}`);
         });
-    res.redirect('/');
-    //res.send(req.file.originalname + " uploaded");
-    // res.render("users/upload", {
-    //         partial: "home-scripts"
-    //     });
+        res.redirect('/');
+        //res.send(req.file.originalname + " uploaded");
+        // res.render("users/upload", {
+        //         partial: "home-scripts"
+        //     });
+    });
 });
 
 
 router.get("/usersystem", (req, res) => {
-console.log(req.user);
+    console.log(req.user);
     res.render("users/usersystem",{
-            partial: "home-scripts"
-        });
-    
+        partial: "home-scripts"
+    });
 });
 
 router.post("/signup", (req,res)=> {

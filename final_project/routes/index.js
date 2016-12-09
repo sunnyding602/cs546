@@ -10,7 +10,7 @@ const constructorMethod = (app) => {
     app.use("/users", userRoutes);
     
     app.get("/", (req, res) => {//home page, you can also call it index.html
-
+        
 		videosData.getVideos().then(videos=>{
 			console.log(videos);
 
