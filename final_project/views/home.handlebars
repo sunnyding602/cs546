@@ -1,4 +1,28 @@
+<style type="text/css">
+.nav{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.nav li{
+    list-style: none;
+    display:inline-block;
+}
+</style>
     <div id="map"></div>
+    <nav class="nav">
+        <ul>
+  {{#if user}}
+
+            <li>{{user.profile.name}}</li>
+        	<li><a href="/users/logout">Logout</a></li>
+  {{else}}
+        	<li><a href="/users/login">Login</a></li>
+  {{/if}}
+            <li><a href="/videos/upload">upload</li>
+
+        </ul>
+    </nav>
     <script>
       var map;
       function initMap() {
@@ -7,35 +31,19 @@
           center: myLatLng,
           zoom: 15
         });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Click to zoom'
-        });
-
-        var contentString = "Hello Google Map API!";
-        var vedioString = '<video width="320" height="240" src="/uploads/myvideo.MOV" controls></video>';
-
-        var myWindow = new google.maps.InfoWindow({
-          content: vedioString
-        });
-        marker.addListener('click', () => {
-          //map.setZoom(8);
-          //map.setCenter(marker.getPosition());
-          myWindow.open(map, marker);
-        });
-
+        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        
+        var userId = '{{#if user}}{{user._id}}{{/if}}';
 {{#each videos}}
 		
-
         var marker{{@index}} = new google.maps.Marker({
-          position: {lat: {{lat}}, lng: {{lon}} },
+          position: {lat: {{lat}}, lng: {{lng}} },
           map: map,
+          icon: userId == '{{userId}}' ? image : '',
           title: 'Click to zoom'
         });
 
-        var vedioString{{@index}} = '<video width="320" height="240" src="/uploads/{{name}}" controls></video>';
+        var vedioString{{@index}} = '<video width="320" height="240" src="{{filepath}}" controls></video>';
 
         var myWindow{{@index}} = new google.maps.InfoWindow({
           content: vedioString{{@index}}

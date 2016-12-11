@@ -58,6 +58,15 @@ router.get("/usersystem", (req, res) => {
     });
 });
 
+
+router.get("/login", (req, res) => {
+    console.log(req.user);
+    res.render("users/login",{
+        partial: "home-scripts"
+    });
+});
+
+
 router.post("/signup", (req,res)=> {
     let name = req.body.uname;
     let password = req.body.upwd;

@@ -14,13 +14,16 @@ let exportedMethods = {
             });
         });
     },
-    saveVideo(filepath, originalName, userId, locationId) {
+    saveVideo(filepath, originalName, userId, lat, lng) {
+		if(!userId) userId = 'public';
         return new Promise((fulfill, reject) => {
             let video = { _id: uuid.v4(), 
                 filepath: filepath, 
                 originalName: originalName,
-                userId: userId, 
-                locationId: locationId
+                userId: userId,
+				lat: lat,
+				lng: lng
+                //locationId: locationId
             };
             videoCollection().then((collection) => {
                 collection.insertOne(video).then(() => {
@@ -29,6 +32,13 @@ let exportedMethods = {
             });
         });
     },
+    getVideosByUserId(userId) {
+		return videoCollection().then((collection) => {
+			collection.find({userId: userId}).toArray().then((videos) => {
+				return videos;
+			});
+		});
+	},
     getVideosByLocationId(locationId) {
 	    return new Promise((fulfill, reject) => {
             videoCollection().then((collection) => {

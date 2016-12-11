@@ -1,4 +1,7 @@
 const userRoutes = require("./user");
+const reviewRoutes = require("./review");
+const videoRoutes = require("./video");
+
 const path = require('path');
 const data = require('../data');
 const videosData = data.videos;
@@ -6,8 +9,11 @@ const userData = data.users;
 
 const constructorMethod = (app) => {
     app.use(userData.attachUserToReq);
+   // app.use(userData.fakeUser); //todo delete later
     
     app.use("/users", userRoutes);
+    app.use("/reviews", reviewRoutes);
+    app.use("/videos", videoRoutes);
     
     app.get("/", (req, res) => {//home page, you can also call it index.html
         

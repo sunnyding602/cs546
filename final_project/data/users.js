@@ -72,6 +72,7 @@ let exportedMethods = {
 		return exportedMethods.findBySessionId(req.cookies.sessionId).then( user=>{
 			if(user){
 				req.user = user;
+                res.locals.user = user;
 			}
 			return next();	
 		}).catch(err=>{
@@ -86,6 +87,11 @@ let exportedMethods = {
 			res.redirect("/");
 		}
 	},
+    fakeUser(req, res, next){
+        req.user = {};
+        req.user._id = '96c6c022-8189-4e4a-8628-643d0bb99903';
+        next();
+    },
 	// updateUserInfo(id,updateinfo) {
     //     let userId = id;
     //     let updateprofile = {info:updateinfo};

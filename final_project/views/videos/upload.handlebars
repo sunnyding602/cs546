@@ -1,0 +1,33 @@
+<form id="file" action="/videos/upload" method="post" enctype="multipart/form-data">
+            click choose file to take a short video and upload it
+    <input id="file-input" type="file" name="video" accept="video/*" capture>
+    <input type="submit" value="Upload">
+	<input type="hidden" name="lat" id="latitude">
+	<input type="hidden" name="lng" id="longitude">
+</form>
+
+<p>Your location info is the following:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+getLocation();
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+	$("#latitude").val(position.coords.latitude);
+	$("#longitude").val(position.coords.longitude);
+}
+
+</script>
