@@ -4,8 +4,19 @@
 
 
 <h2>Videos List</h2>
-{{#each videos}}
-    <ul>
-        <li>{{originalName}}<a href="/videos/delete/{{_id}}">Delete</a></li>
+<div class="container">
+  <div class="col-sm-8">
+    <ul class="list-group">
+      {{#each videos}}
+          <li class="list-group-item row">
+            <div class="col-sm-10">
+              {{originalName}}
+            </div>
+            <div class="col-sm-2">
+              <a href="/videos/delete/{{_id}}">Delete</a>
+            </div>
+          </li>
+      {{/each}}
     </ul>
-{{/each}}
+  </div>
+</div>

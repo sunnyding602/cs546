@@ -1,7 +1,13 @@
+<div class="container">
 <form id="file" action="/videos/upload" method="post" enctype="multipart/form-data">
-            click choose file to take a short video and upload it
-    <input id="file-input" type="file" name="video" accept="video/*" capture>
-    <input type="submit" value="Upload">
+    <p>click choose file to take a short video and upload it</p>
+    <div class="form-group">
+        <label for="file-input">File input</label>
+        <input class="form-control-file" id="file-input" type="file" name="video" accept="video/*" capture>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Upload">
+    </div>
 	<input type="hidden" name="lat" id="latitude">
 	<input type="hidden" name="lng" id="longitude">
 </form>
@@ -31,3 +37,4 @@ function showPosition(position) {
 }
 
 </script>
+</div>
