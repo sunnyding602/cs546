@@ -24,6 +24,13 @@ router.get("/upload", (req, res) => {
 	});
 });
 
+//user center, where user can manage his videos 
+router.get("/center/:id", (req, res) => {
+	res.render("users/upload", {
+		partial: "upload-scripts"
+	});
+});
+
 router.post("/upload", upload.single('video'),(req, res) => {
     if(!req.body.latitude){
         res.send('If no gps data provided, we cannot put a pin on the map');
