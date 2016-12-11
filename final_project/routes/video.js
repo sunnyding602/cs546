@@ -28,6 +28,7 @@ router.get("/delete/:id", userData.ensureLogin,(req, res) => {
 router.post("/upload", upload.single('video'),(req, res) => {
     if(!req.body.lat){
         res.send('If no gps data provided, we cannot put a pin on the map');
+        return;
     }
     console.log(uploadDir+req.file.originalname);
     console.log(req.file.path);
