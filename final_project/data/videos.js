@@ -34,7 +34,7 @@ let exportedMethods = {
     },
     getVideosByUserId(userId) {
 		return videoCollection().then((collection) => {
-			collection.find({userId: userId}).toArray().then((videos) => {
+			return collection.find({userId: userId}).toArray().then((videos) => {
 				return videos;
 			});
 		});
@@ -48,12 +48,15 @@ let exportedMethods = {
             });
         });
 	},
-    deleteVideosById(id) {
+    deleteVideosById(id, userId) {
         return new Promise((fulfill, reject) => {
             videoCollection().then((collection) => {
                 collection.find({_id: id}).toArray().then((videos) => {
                     if(videos) {
                         videos.forEach((video) => {
+							if(video.userId != userId){
+								reject("you can only delete ur videos");
+							}
                             fs.unlinkSync(video.filepath);
                         });
                         collection.remove({_id: id}).then((info) => {

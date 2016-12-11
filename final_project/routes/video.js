@@ -16,6 +16,15 @@ router.get("/upload", (req, res) => {
 	});
 });
 
+router.get("/delete/:id", userData.ensureLogin,(req, res) => {
+    videosData.deleteVideosById(req.params.id, req.user._id).then(id=>{
+        res.redirect("/users/center");
+    }).catch(err=>{
+        console.log(err);
+        res.redirect("/users/center");
+    });
+});
+
 router.post("/upload", upload.single('video'),(req, res) => {
     if(!req.body.lat){
         res.send('If no gps data provided, we cannot put a pin on the map');
