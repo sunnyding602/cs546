@@ -48,6 +48,25 @@ let exportedMethods = {
             });
         });
 	},
+    deleteVideosById(id) {
+        return new Promise((fulfill, reject) => {
+            videoCollection().then((collection) => {
+                collection.find({_id: id}).toArray().then((videos) => {
+                    if(videos) {
+                        videos.forEach((video) => {
+                            fs.unlinkSync(video.filepath);
+                        });
+                        collection.remove({_id: id}).then((info) => {
+                            fulfill(id);
+                        });
+                    } else {
+                        fulfill("no videos with the location id");
+                    }
+                });
+                
+            });
+        });
+    },
     deleteVideosByLocationId(locationId) {
         return new Promise((fulfill, reject) => {
             videoCollection().then((collection) => {

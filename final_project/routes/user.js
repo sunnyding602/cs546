@@ -25,10 +25,14 @@ router.get("/upload", (req, res) => {
 });
 
 //user center, where user can manage his videos 
-router.get("/center/:id", (req, res) => {
-	res.render("users/upload", {
-		partial: "upload-scripts"
-	});
+router.get("/center", userData.ensureLogin, (req, res) => {
+    videosData.getVideosByUserId(req.user._id).then(videos=>{
+        res.render("users/center", {
+            partial: "upload-scripts",
+            videos: videos
+        });
+    });
+
 });
 
 router.post("/upload", upload.single('video'),(req, res) => {
