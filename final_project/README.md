@@ -1,11 +1,9 @@
-avaliable routes as the following:
+CS546 FINAL PROJECT - Live Video
 
-https://localhost:3000/
+If you don't want to install locally, play online at https://runxiflute.com
 
-https://localhost:3000/users/upload
 
-#todo
-1.refine upload part
-2.user login system
-3.create taks/seed.js script, that insert data into mongo
-4.create this just to create a pull request
+Run locally needs the following steps:
+
+1. npm install
+2. node app.js

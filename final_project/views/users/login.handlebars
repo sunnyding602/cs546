@@ -1,0 +1,30 @@
+<div class="container">
+<h1>Have an accound? Just Login</h1>
+
+<form id="userslogin" action="/users/login" method="POST">
+    <div class="form-group">
+        <label class="sr-only">Username</label>
+        <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
+    </div>
+    <div class="form-group">
+        <label class="sr-only">Password</label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="upwd" required>
+    </div>
+    <button type="submit" id="login" class="btn btn-primary">Login</button>
+</form>
+
+
+<h2>Register</h2>
+
+<form id="usersignup" action="/users/signup" method="POST" >
+    <div class="form-group">
+        <label class="sr-only">Username</label>
+        <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
+    </div>
+    <div class="form-group">
+        <label class="sr-only">Password</label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="upwd" required>
+    </div>
+    <button type="submit" id="signup" class="btn btn-primary">Signup</button>
+</form>
+</div>

@@ -1,12 +1,15 @@
-<form id="file" action="/users/upload" method="post" enctype="multipart/form-data">
-            click choose file to take a short video and upload it!!
-    <label class="custom-file">
-        <input class="custom-file-input" id="file-input" type="file" name="video" accept="video/*" capture>
-        <span class="custom-file-control"></span>
-    </label>
-    <input type="submit" value="Upload">
-	<input type="hidden" name="latitude" id="latitude">
-	<input type="hidden" name="longitude" id="longitude">
+<div class="container">
+<form id="file" action="/videos/upload" method="post" enctype="multipart/form-data">
+    <p>click choose file to take a short video and upload it</p>
+    <div class="form-group">
+        <label for="file-input">File input</label>
+        <input class="form-control-file" id="file-input" type="file" name="video" accept="video/*" capture>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Upload">
+    </div>
+	<input type="hidden" name="lat" id="latitude">
+	<input type="hidden" name="lng" id="longitude">
 </form>
 
 <p>Your location info is the following:</p>
@@ -34,3 +37,4 @@ function showPosition(position) {
 }
 
 </script>
+</div>
