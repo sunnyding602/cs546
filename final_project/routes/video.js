@@ -34,10 +34,11 @@ router.post("/upload", upload.single('video'),(req, res) => {
     console.log(req.file.path);
     let lat = req.body.lat;
     let lng = req.body.lng;
-    //fs.renameSync(req.file.path, uploadDir+req.file.originalname);
+    let path = req.file.path + '.mov'; 
+    fs.renameSync(req.file.path, path);
     let userId = '';
     userId =  !req.user ? 'public' : req.user._id; 
-	videosData.saveVideo(req.file.path, req.file.originalname, userId, lat, lng).then((videoId) => {
+	videosData.saveVideo(path, req.file.originalname, userId, lat, lng).then((videoId) => {
         exec(`echo "someone just uploaded a new video name:${req.file.originalname} lat ${req.body.latitude} lng${req.body.longitude}" | mail -s "new video uploaded" sunnyding602@gmail.com`, 
         (error, stdout, stderr) => {
             if (error) {
